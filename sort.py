@@ -24,7 +24,7 @@ def scan_folder(path: str):
     for el in os.listdir(path):
         current = os.path.join(path, el)
         if os.path.isdir(current):
-            scan_folder3(current)
+            scan_folder(current)
             delete_folder(current)
         else:
             move_file(current)
